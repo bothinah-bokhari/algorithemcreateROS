@@ -6,16 +6,3 @@ curl -s https://raw.githubusercontent.com/ros/rosdistro/master/ros.asc | sudo ap
 sudo apt update
 sudo apt install ros-noetic-desktop-full
 roscore
-
-algorithm to install ROS on Jetson Nano :
-git clone https://github.com/JetsonHacksNano/installROS.git
-cd installROS/
-./installROS.sh
-./installROS.sh -p ros-melodic-desktop
-#setupCatkinWorkspace.sh
-./setupCatkinWorkspace.sh
-gedit ~/.bashrc
-source ~/.bashrc
-roscore
-#TRY THIS TO ENSURE RUNINIG:
-rostopic list 
